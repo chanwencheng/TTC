@@ -1,0 +1,6 @@
+@TTCRestAPI_HostAddress = http://localhost:5074
+
+GET {{TTCRestAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
