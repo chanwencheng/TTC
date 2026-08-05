@@ -1,11 +1,11 @@
 # 階段 1: 執行階段基礎映像檔 (.NET 8)
-FROM ://microsoft.com AS base
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS base
 WORKDIR /app
 EXPOSE 8080
 EXPOSE 8443
 
 # 階段 2: SDK 編譯階段 (.NET 8)
-FROM ://microsoft.com AS build
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 
 # 複製子資料夾內的項目檔並進行還原
